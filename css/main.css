@@ -121,3 +121,8 @@ th {
   padding: .5em 1em;
   margin-top: 1.2em;
 }
+
+.footer a, .footer a:visited {
+  text-decoration: none;
+  color: inherit;
+}
