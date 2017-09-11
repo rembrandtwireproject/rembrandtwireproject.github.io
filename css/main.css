@@ -114,6 +114,11 @@ th {
   font-weight: normal;
 }
 
+.tableimg {
+  max-height: 300px !important;
+  max-width: 300px !important;
+}
+
 .footer {
   grid-area: footer;
   background-color: black;
