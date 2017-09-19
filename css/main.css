@@ -22,18 +22,22 @@ html {
 }
 
 .header img {
-  height: 90px;
+  height: 70px;
 }
 
-@media screen and (max-width: 912px) {
+.header a {
+  margin-bottom: 1px;
+}
+
+@media screen and (max-width: 900px) {
   .header {
+    grid-area: header;
     display: block;
-    justify-content: none;
+    justify-content: space-between;
   }
 
   .header img {
-    width: 382px;
-    height: auto;
+    height: 50px;
   }
 }
 
