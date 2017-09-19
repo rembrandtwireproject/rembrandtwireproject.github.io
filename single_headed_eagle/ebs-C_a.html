@@ -29,9 +29,20 @@
         <p>Watermark C.a. can be distinguished by these three features: segmented wings that point upwards, a tongue protruding from the eagle, and two chain lines intersecting the body. (Marked with blue.)</p>
         <img src="images/ebs-C_a.png" alt="ebs-C_a">
       </div>
+      <div class="sidebar">
+        <br><br><br><br><br><br><br>
+        <h3>Your comparative image</h3>
+      </div>
       <div class="footer">
         <a href="http://museum.cornell.edu/" target="_blank">Herbert F. Johnson Museum of Art, Cornell University</a>
       </div>
     </div>
+    <script>
+      const image = sessionStorage.image;
+      const elem = document.createElement("img");
+      elem.setAttribute("src", image);
+      const sidebar = document.getElementsByClassName("sidebar")[0];
+      sidebar.appendChild(elem);
+    </script>
   </body>
 </html>

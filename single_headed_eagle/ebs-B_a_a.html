@@ -29,9 +29,20 @@
         <p>Watermark B.a.a. can be distinguished by these three features: the letters ID on the bottom, a Basel crosier at the center of the eagle, and ends of feathers from both wings crossing a chain line (marked with red).</p>
         <img src="images/ebs-B_a_a.png" alt="ebs-B_a_a">
       </div>
+      <div class="sidebar">
+        <br><br><br><br><br><br><br>
+        <h3>Your comparative image</h3>
+      </div>
       <div class="footer">
         <a href="http://museum.cornell.edu/" target="_blank">Herbert F. Johnson Museum of Art, Cornell University</a>
       </div>
     </div>
+    <script>
+      const image = sessionStorage.image;
+      const elem = document.createElement("img");
+      elem.setAttribute("src", image);
+      const sidebar = document.getElementsByClassName("sidebar")[0];
+      sidebar.appendChild(elem);
+    </script>
   </body>
 </html>

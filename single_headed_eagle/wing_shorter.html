@@ -32,9 +32,20 @@
         <p>Is the second segment of the wing noticeably shorter than the first, as shown here? (Marked with blue.)</p>
         <img src="images/wing_shorter.png" alt="wing_shorter">
       </div>
+      <div class="sidebar">
+        <br><br><br><br><br><br><br>
+        <h3>Your comparative image</h3>
+      </div>
       <div class="footer">
         <a href="http://museum.cornell.edu/" target="_blank">Herbert F. Johnson Museum of Art, Cornell University</a>
       </div>
     </div>
+    <script>
+      const image = sessionStorage.image;
+      const elem = document.createElement("img");
+      elem.setAttribute("src", image);
+      const sidebar = document.getElementsByClassName("sidebar")[0];
+      sidebar.appendChild(elem);
+    </script>
   </body>
 </html>
