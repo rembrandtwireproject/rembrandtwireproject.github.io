@@ -22,8 +22,8 @@
       </div>
       <div class="main">
         <h3>Eagle, Single-Headed</h3>
-        <a class="button disabled" href="basel_eagle.html">↩ Back one step</a>
-        <a class="button disabled" href="basel_eagle.html">↻ Restart this branch</a>
+        <a class="button" href="../single_headed_eagle">↩ Back one step</a>
+        <a class="button" href="../single_headed_eagle">↻ Restart this branch</a>
         <a class="button" href="diagram.pdf" target="_blank">See branch diagram</a>
         <h3>Is there a basel crosier at the center of the eagle?</h3>
         <a class="button" href="wings_downward.html">Yes</a>
@@ -32,9 +32,20 @@
         <p>Is there a basel crosier such as this one at the center of the eagle? (Marked with grey.)</p>
         <img src="images/basel_eagle.png" alt="basel_eagle">
       </div>
+      <div class="sidebar">
+        <br><br><br><br><br><br><br>
+        <h3>Your comparative image</h3>
+      </div>
       <div class="footer">
         <a href="http://museum.cornell.edu/" target="_blank">Herbert F. Johnson Museum of Art, Cornell University</a>
       </div>
     </div>
+    <script>
+      const image = sessionStorage.image;
+      const elem = document.createElement("img");
+      elem.setAttribute("src", image);
+      const sidebar = document.getElementsByClassName("sidebar")[0];
+      sidebar.appendChild(elem);
+    </script>
   </body>
 </html>

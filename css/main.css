@@ -12,7 +12,11 @@ html {
 
 .layout {
   display: grid;
-  grid-template-areas: 'header' 'menu' 'main' 'footer';
+  grid-template-areas:
+    'header header'
+    'menu menu'
+    'main sidebar'
+    'footer footer';
 }
 
 .header {
@@ -60,6 +64,11 @@ html {
   color: black;
 }
 
+.sidebar {
+  grid-area: sidebar;
+  padding: .8em;
+}
+
 .main {
   grid-area: main;
   padding: .8em;
@@ -70,7 +79,11 @@ html {
   max-width: 32em;
 }
 
-#branches figure {
+#branches img {
+  height: 16em;
+}
+
+#branches figure, #comparative figure {
   display: block;
   float: left;
   margin-left: 0;
@@ -83,8 +96,13 @@ figcaption {
   text-align: center;
 }
 
-#branches img {
-  height: 16em;
+#comparative figure:hover {
+  cursor: pointer;
+}
+
+#comparative img, .sidebar img {
+  max-height: 16em;
+  max-width: 16em;
 }
 
 .button {

@@ -21,11 +21,14 @@
         <a href="../resources">Resources</a>
       </div>
       <div class="main">
-        <h3>Select a watermark branch to begin.</h3>
-        <div id="branches">
+        <div id="comparative">
           <figure>
-            <a href="../single_headed_eagle"><img src="images/single_headed_eagle.png"></a>
-            <figcaption>Single-Headed Eagle</figcaption>
+            <p><img onclick="init('../assets/rembrandt_closeup.png')" src="../assets/rembrandt_closeup.png"></p>
+            <figcaption>Example option 1.</figcaption>
+          </figure>
+          <figure>
+            <img onclick="init('../branches/images/single_headed_eagle.png')" src="../branches/images/single_headed_eagle.png">
+            <figcaption>Example option 2.</figcaption>
           </figure>
         </div>
       </div>
@@ -33,5 +36,11 @@
         <a href="http://museum.cornell.edu/" target="_blank">Herbert F. Johnson Museum of Art, Cornell University</a>
       </div>
     </div>
+    <script>
+      function init(image) {
+        sessionStorage.image = image;
+        window.location.href = "basel_eagle.html";
+      }
+    </script>
   </body>
 </html>
