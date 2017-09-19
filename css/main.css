@@ -79,6 +79,10 @@ html {
   margin-bottom: 1em;
 }
 
+figcaption {
+  text-align: center;
+}
+
 #branches img {
   height: 16em;
 }
