@@ -24,7 +24,7 @@
         <h3>Eagle, Single-Headed</h3>
         <a class="button" href="fleur_eagle.html">↩ Back one step</a>
         <a class="button" href="basel_eagle.html">↻ Restart this branch</a>
-        <a class="button" href="diagram.pdf" target="_blank">See branch diagram</a>
+        <a class="button" href="diagram.html">See branch diagram</a>
         <h3>Does the same chain line intersect the beak and crown?</h3>
         <a class="button" href="esh-A_a_a.html">Yes</a>
         <a class="button" href="esh-A_a.html">No</a>
@@ -41,6 +41,7 @@
       </div>
     </div>
     <script>
+      sessionStorage.last = "beak_crown";
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);

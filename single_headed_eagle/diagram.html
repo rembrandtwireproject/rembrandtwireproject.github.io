@@ -21,32 +21,19 @@
         <a href="../resources">Resources</a>
       </div>
       <div class="main">
-        <h3>Eagle, Single-Headed</h3>
-        <a class="button" href="only_letters_eagle.html">↩ Back one step</a>
-        <a class="button" href="basel_eagle.html">↻ Restart this branch</a>
-        <a class="button" href="diagram.html">See branch diagram</a>
-        <h3>Are there letters and a cross at the bottom of the eagle?</h3>
-        <a class="button" href="ebs-D_a.html">Yes</a>
-        <a class="button" href="ebs-C_a.html">No</a>
-        <h3>Example</h3>
-        <p>Are there letters and a cross at the bottom of the eagle? (Marked with blue.)</p>
-        <img src="images/letters_cross_eagle.png" alt="letters_cross_eagle">
-      </div>
-      <div class="sidebar">
-        <br><br><br><br><br><br><br>
-        <h3>Your comparative image</h3>
+        <h3>Eagle, Single-Headed - Diagram</h3>
+        <a class="button" id="back">↩ Back to last step</a>
+        <iframe src="diagram.pdf" style="width:1000px; height:500px" frameborder="0"></iframe>
       </div>
       <div class="footer">
         <a href="http://museum.cornell.edu/" target="_blank">Herbert F. Johnson Museum of Art, Cornell University</a>
       </div>
     </div>
     <script>
-      sessionStorage.last = "letters_cross_eagle";
-      const image = sessionStorage.image;
-      const elem = document.createElement("img");
-      elem.setAttribute("src", image);
-      const sidebar = document.getElementsByClassName("sidebar")[0];
-      sidebar.appendChild(elem);
+      const last = sessionStorage.last;
+      const back = document.getElementById("back");
+      back.href = last.concat(".html");
+      console.log(last);
     </script>
   </body>
 </html>

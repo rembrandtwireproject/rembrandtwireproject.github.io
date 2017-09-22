@@ -24,7 +24,7 @@
         <h3>Eagle, Single-Headed</h3>
         <a class="button" href="letters_cross_eagle.html">↩ Back one step</a>
         <a class="button" href="basel_eagle.html">↻ Restart this branch</a>
-        <a class="button" href="diagram.pdf" target="_blank">See branch diagram</a>
+        <a class="button" href="diagram.html">See branch diagram</a>
         <h3>Your watermark is Eagle with Basel Crosier, Single-Headed, D.a.</h3>
         <p>There are three distinguishing features of watermark D.a. which can be identified from this fragment: there is a cross extending from the eagle's tail, several letters below the cross, and two tail feathers curl inward. (Marked with blue.)</p>
         <img src="images/ebs-D_a.png" alt="ebs-D_a">
@@ -38,6 +38,7 @@
       </div>
     </div>
     <script>
+      sessionStorage.last = "ebs-D_a";
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);
