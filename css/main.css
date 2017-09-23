@@ -33,18 +33,6 @@ html {
   margin-bottom: 1px;
 }
 
-@media screen and (max-width: 900px) {
-  .header {
-    grid-area: header;
-    display: block;
-    justify-content: space-between;
-  }
-
-  .header img {
-    height: 50px;
-  }
-}
-
 .menu {
   grid-area: menu;
   background-color: black;
@@ -101,8 +89,8 @@ figcaption {
 }
 
 #comparative img, .sidebar img {
-  max-height: 16em;
-  max-width: 16em;
+  max-height: 20em;
+  max-width: 20em;
 }
 
 .button {
