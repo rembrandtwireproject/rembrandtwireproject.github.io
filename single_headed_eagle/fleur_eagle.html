@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../assets/main.css">
     <link rel="icon" type="image/x-icon" href="../assets/index.ico">
     <title>Watermark Project</title>
   </head>
   <body>
     <div class="layout">
       <div class="header">
-        <a href="../"><img src="../assets/wire_logo.png" alt="Cornell WIRE logo"></a>
-        <img src="../assets/rembrandt_closeup.png" alt="Rembrandt closeup">
+        <a href="../"><img id="logo" src="../assets/wire_logo.png" alt="Cornell WIRE logo"></a>
+        <img id="rembrandt" src="../assets/rembrandt_header.png" alt="Rembrandt header">
       </div>
       <div class="menu">
         <a href="../">Home</a>
@@ -21,20 +21,24 @@
         <a href="../resources">Resources</a>
       </div>
       <div class="main">
-        <h3>Eagle, Single-Headed</h3>
-        <a class="button" href="basel_eagle.html">↩ Back one step</a>
-        <a class="button" href="basel_eagle.html">↻ Restart this branch</a>
-        <a class="button" href="diagram.html">See branch diagram</a>
-        <h3>Is there a fleur-de-lis at the center of the eagle?</h3>
-        <a class="button" href="wing_shorter.html">Yes</a>
-        <a class="button" href="beak_crown.html">No</a>
-        <h3>Example</h3>
-        <p>Is there a fleur-de-lis such as this one at the center of the eagle? (Marked with grey.)</p>
-        <img src="images/fleur_eagle.png" alt="fleur_eagle">
-      </div>
-      <div class="sidebar">
-        <br><br><br><br><br><br><br>
-        <h3>Your comparative image</h3>
+        <div class="split">
+          <div class="left">
+            <h3>Single-Headed Eagle</h3>
+            <a class="button" href="diagram.html">See branch diagram</a>
+            <br>
+            <a class="button" href="basel_eagle.html">↩ Back one step</a>
+            <a class="button" href="index.html">↻ Restart this branch</a>
+            <h3>Is there a fleur-de-lis at the center of the eagle?</h3>
+            <a class="button" href="wing_shorter.html">Yes</a>
+            <a class="button" href="beak_crown.html">No</a>
+            <h3>Example</h3>
+            <p>Is there a fleur-de-lis at the center of the eagle? (Marked with grey.)</p>
+            <img src="images/fleur_eagle.png" alt="fleur_eagle">
+          </div>
+          <div class="right">
+            <h3>Your comparative image</h3>
+          </div>
+        </div>
       </div>
       <div class="footer">
         Herbert F. Johnson Museum of Art, Cornell University
@@ -45,8 +49,8 @@
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);
-      const sidebar = document.getElementsByClassName("sidebar")[0];
-      sidebar.appendChild(elem);
+      const right = document.getElementsByClassName("right")[0];
+      right.appendChild(elem);
     </script>
   </body>
 </html>

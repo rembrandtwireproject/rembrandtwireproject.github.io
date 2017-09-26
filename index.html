@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/main.css">
     <link rel="icon" type="image/x-icon" href="assets/index.ico">
     <title>Watermark Project</title>
   </head>
   <body>
     <div class="layout">
       <div class="header">
-        <a href=""><img src="assets/wire_logo.png" alt="Cornell WIRE logo"></a>
-        <img src="assets/rembrandt_closeup.png" alt="Rembrandt closeup">
+        <a href=""><img id="logo" src="assets/wire_logo.png" alt="Cornell WIRE logo"></a>
+        <img id="rembrandt" src="assets/rembrandt_header.png" alt="Rembrandt header">
       </div>
       <div class="menu">
         <a href="">Home</a>
@@ -21,13 +21,15 @@
         <a href="resources">Resources</a>
       </div>
       <div class="main">
-        <h2>Welcome to the WIRE project.</h2>
-        <p>This student-designed program is intended to simplify the process of confidently identifying watermarks in Rembrandt’s etchings by offering a guide to the often subtle differences between them.</p>
-        <p>In its finished form, it will allow researchers and others interested in Rembrandt’s prints to upload watermark images from Rembrandt prints for identification, accessing information about a given impression’s date and membership in an edition.</p>
-        <p>To start, select a watermark image from the choices offered, and follow the series of questions and images to find a match.</p>
-        <p>Enjoy!</p>
-        <br>
-        <a class="button" href="branches">Get started</a>
+        <div class="text">
+          <h2>Welcome to the WIRE project.</h2>
+          <p>The Watermark Identification in Rembrandt’s Etchings (WIRE) project aims to simplify the process of confidently identifying watermarks in Rembrandt’s etchings. The often-subtle differences between watermark subvariants can be difficult to distinguish. This student-designed program is based on the model of a decision tree, a branching series of questions. The questions allow researchers to inspect a watermark and arrive at a subvariant classification, and provides a guide to distinguishing the subvariants. Eventually, all watermark types and subvariants from Hinterding’s 2006 book <i>Rembrandt as an Etcher</i> will be included in this tool.</p>
+          <p>To learn more about the project, see the <a href="about">About</a> page, take a look at the <a href="team">Project Team</a>, or investigate further <a href="resources">Resources</a>.</p>
+          <p>For this demo, a subset of watermark types are offered. Researchers with watermarks of interest can use their own watermark images to run through the decision tree. For other interested users, we have provided several options to choose from. After choosing a comparative image, either from our selection or your own, follow the series of questions and images to find your watermark’s subvariant classification.</p>
+          <p>Enjoy!</p>
+          <br>
+          <a class="button" href="start">Get started</a>
+        </div>
       </div>
       <div class="footer">
         Herbert F. Johnson Museum of Art, Cornell University

@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../assets/main.css">
     <link rel="icon" type="image/x-icon" href="../assets/index.ico">
     <title>Watermark Project</title>
   </head>
   <body>
     <div class="layout">
       <div class="header">
-        <a href="../"><img src="../assets/wire_logo.png" alt="Cornell WIRE logo"></a>
-        <img src="../assets/rembrandt_closeup.png" alt="Rembrandt closeup">
+        <a href="../"><img id="logo" src="../assets/wire_logo.png" alt="Cornell WIRE logo"></a>
+        <img id="rembrandt" src="../assets/rembrandt_header.png" alt="Rembrandt header">
       </div>
       <div class="menu">
         <a href="../">Home</a>
@@ -21,16 +21,18 @@
         <a href="../resources">Resources</a>
       </div>
       <div class="main">
-        <h3>Before running through the Single-Headed Eagle branch, choose a comparative watermark to classify.</h3>
-        <p>You will answer questions about your choice of watermark, as you run through the branch to find its subvariant.</p>
-        <br>
-        <div id="comparative">
+        <div class="text">
+          <h3>Single-Headed Eagle — Demo</h3>
+          <p>Before running through the Single-Headed Eagle branch, choose a comparative watermark to classify.</p>
+          <p>You will then answer questions about your choice of watermark, as you run through the branch to find its subvariant classification.</p>
+        </div>
+        <div class="imagegrid">
           <figure>
-            <p><img onclick="init('images/option_bcBab.png')" src="images/option_bcBab.png"></p>
+            <img onclick="init('images/option_basel_Bab.png')" src="images/option_basel_Bab.png">
             <figcaption>Option 1.</figcaption>
           </figure>
           <figure>
-            <img onclick="init('images/option_Bprimeb.png')" src="images/option_Bprimeb.png">
+            <img onclick="init('images/option_B\'b.png')" src="images/option_B'b.png">
             <figcaption>Option 2.</figcaption>
           </figure>
           <figure>

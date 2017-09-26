@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../assets/main.css">
     <link rel="icon" type="image/x-icon" href="../assets/index.ico">
     <title>Watermark Project</title>
   </head>
   <body>
     <div class="layout">
       <div class="header">
-        <a href="../"><img src="../assets/wire_logo.png" alt="Cornell WIRE logo"></a>
-        <img src="../assets/rembrandt_closeup.png" alt="Rembrandt closeup">
+        <a href="../"><img id="logo" src="../assets/wire_logo.png" alt="Cornell WIRE logo"></a>
+        <img id="rembrandt" src="../assets/rembrandt_header.png" alt="Rembrandt header">
       </div>
       <div class="menu">
         <a href="../">Home</a>
@@ -21,34 +21,36 @@
         <a href="../resources">Resources</a>
       </div>
       <div class="main">
-        <h2>Resources</h2>
-        <h3>Books and articles</h3>
-        <p>Ash, Nancy, and Shelley Fletcher, <i>Watermarks in Rembrandt’s Prints, National Gallery of Art</i>, 1998.</p>
-        <p>Hinterding, Erik, <i>Rembrandt as an Etcher: The practice of production and distribution</i>, 3 vols., Sound & Vision, 2006.</p>
-        <p>Hinterding, Erik and Jaco Rutgers (compilers) and Ger Luijten (editor), <i>The New Hollstein Dutch and Flemish etchings, engravings and woodcuts 1400-1700, Rembrandt</i>, 7 vols., Ouderkerk aan den IJssel (Sound and Vision Publishers), 2013. Vol. 25, part 1, pp. xlvii–lxvii (Introduction and Explanatory Note to the Catalogue).</p>
-        <p>Kok, Jan Piet Filedt and Robert Fucci, “Book Review of Erik Hinterding and Jaco Rutgers (compilers) and Ger Luijten (editor), <i>The New Hollstein Dutch and Flemish etchings, engravings and woodcuts 1400-1700, Rembrandt</i>, 7 vols., Ouderkerk aand den IJssel (Sound and Vision Publishers), 2013,” Simiolus, vol. 37, pp. 141-149, 2013-2014.</p>
-        <p>Johnson, C.R. Jr., W. A. Sethares, M. H. Ellis, and S. Haqqi, “Hunting for Paper Moldmates Among Rembrandt’s Prints,” <i>IEEE Signal Processing Magazine (Special Section on Signal Processing for Art Investigation)</i>, vol. 32, no. 4, pp. 28-37, July 2015.</p>
-        <p>Hults, Linda C., <i>The Print in the Western World</i>, Madison: University of Wisconsin Press, 1996, Introduction, pp. 3-16.</p>
-        <p>Skalka, Michael, “The Rembrandt Watermark Project Compact Disk,” <i>Hands On: Hypermedia & Interactivity in Museums, Selected Papers from the Third International Conference on Hypermedia and Interactivity in Museums</i> (ICHIM 95 / MCN 95), pp. 39-45.</p>
-        <p>Staalduinen, Mark van “Introduction to Paper Research,” Chapter 1 in Content-based Paper Retrieval Towards Reconstruction of Art History, PhD Thesis, T U Delft, 2010.</p>
-        <p>Stevenson, Allan, H. “Watermarks Are Twins,” <i>Studies in Bibliography</i>, vol. 4, pp. 57-91 and 235, 1951/1952.</p>
-        <p>Stijnman, Ad. <i>Engraving and Etching 1400-2000: A History of the Development of Manual Intaglio Printmaking Processes</i> (London: Archetype Publications, 2012).</p>
-        <p>White, Christopher. <i>Rembrandt as an Etcher: A Study of the Artist at Work</i> (Second Edition). Yale University Press, 1999, Introduction and Chapter 1 on Technique, pp. 1-18.</p>
-        <p>Heawood, Edward, <i>Watermarks, Mainly of the 17th and 18th Centuries</i>, Hilversum, Holland: Paper Publications Society, 1950.</p>
-        <h3>Selected online resources</h3>
-        <p>Watermark Identification in Rembrandt’s Etchings, Spring semester 2016. [http://museum.cornell.edu/watermark-identification-rembrandt-etchings]</p>
-        <p>Video: Papermaking by hand at Hayle Mill, England in 1976. [http://www.youtube.com/watch?v=Xs3PfwOItto]</p>
-        <p>Chancery Papermaking. [http://now.uiowa.edu/2013/05/center-book-releases-short-film-about-papermaking]</p>
-        <p>Video: Rembrandt & Printmaking: Etching and Drypoint (Philadelphia Museum of Art). [https://www.youtube.com/watch?v=RM0qlQ0lyBc]</p>
-        <p>Video: The Etching Process (Sequence from film Goya’s Ghosts). [https://www.youtube.com/watch?v=nlpsBU6gkUM]</p>
-        <p>LIMA (Literary Manuscripts) at University of Warwick, UK’s Centre for the Study of the Renaissance. [http://www2.warwick.ac.uk/fac/arts/ren/projects/lima/paper/describing/]</p>
-        <p>International Association of Paper Historians Standard. [http://www.paperhistory.org/standard.htm]</p>
-        <p>Bernstein: The Memory of Paper. [http://www.memoryofpaper.eu/BernsteinPortal/appl_start.disp]</p>
-        <p>The NIKI International Database of Watermarks and Paper used for Prints and Drawings (c. 1450-1800). [http://www.wm-portal.net/niki/index.php]</p>
-        <p>WILC: Watermarks in Incunabula Printed in the Low Countries. [http://watermark.kb.nl/page]</p>
-        <p>The Piccard Watermarks collection at the Staatshauptsarchiv, Stuttgart. [http://www.piccard-online.de/]</p>
-        <p>Briquet online. [http://www.ksbm.oeaw.ac.at/_scripts/php/BR.php]</p>
-        <p>The Thomas L. Gravell watermark archive. [http://www.gravell.org]
+        <div class="text">
+          <h2>Resources</h2>
+          <h3>Books and articles</h3>
+          <p>Ash, Nancy, and Shelley Fletcher. <i>Watermarks in Rembrandt’s Prints</i>, National Gallery of Art, 1998.</p>
+          <p>Hinterding, Erik. <i>Rembrandt as an Etcher: The practice of production and distribution</i>, 3 vols., Sound & Vision, 2006.</p>
+          <p>Hinterding, Erik and Jaco Rutgers (compilers) and Ger Luijten (editor). <i>The New Hollstein Dutch and Flemish etchings, engravings and woodcuts 1400-1700, Rembrandt</i>, 7 vols., Ouderkerk aan den IJssel (Sound and Vision Publishers), 2013. Introduction and Explanatory Note to the Catalogue, pp. xlvii–lxvii in Vol. 25, part 1.</p>
+          <p>Kok, Jan Piet Filedt and Robert Fucci. “Book Review of Erik Hinterding and Jaco Rutgers (compilers) and Ger Luijten (editor), <i>The New Hollstein Dutch and Flemish etchings, engravings and woodcuts 1400-1700, Rembrandt</i>, 7 vols., Ouderkerk aand den IJssel (Sound and Vision Publishers), 2013,” <i>Simiolus</i>, vol. 37, pp. 141-149, 2013-2014.</p>
+          <p>Johnson, C.R. Jr., W. A. Sethares, M. H. Ellis, and S. Haqqi. “Hunting for Paper Moldmates Among Rembrandt’s Prints,” <i>IEEE Signal Processing Magazine (Special Section on Signal Processing for Art Investigation)</i>, vol. 32, no. 4, pp. 28-37, July 2015.</p>
+          <p>Hults, Linda C. <i>The Print in the Western World</i>, Madison: University of Wisconsin Press, 1996. Introduction, pp. 3-16.</p>
+          <p>Skalka, Michael. “The Rembrandt Watermark Project Compact Disk,” <i>Hands On: Hypermedia & Interactivity in Museums, Selected Papers from the Third International Conference on Hypermedia and Interactivity in Museums</i> (ICHIM 95 / MCN 95), pp. 39-45.</p>
+          <p>Staalduinen, Mark van. “Introduction to Paper Research,” PhD Thesis, T U Delft, 2010. Chapter 1, Content-based Paper Retrieval Towards Reconstruction of Art History.</p>
+          <p>Stevenson, Allan, H. “Watermarks Are Twins,” <i>Studies in Bibliography</i>, vol. 4, pp. 57-91 and 235, 1951/1952.</p>
+          <p>Stijnman, Ad. <i>Engraving and Etching 1400-2000: A History of the Development of Manual Intaglio Printmaking Processes</i>, London: Archetype Publications, 2012.</p>
+          <p>White, Christopher. <i>Rembrandt as an Etcher: A Study of the Artist at Work</i>, ed. 2, Yale University Press, 1999. Introduction and Chapter 1 on Technique, pp. 1-18.</p>
+          <p>Heawood, Edward. <i>Watermarks, Mainly of the 17th and 18th Centuries</i>, Hilversum, Holland: Paper Publications Society, 1950.</p>
+          <h3>Selected online resources</h3>
+          <p>Watermark Identification in Rembrandt’s Etchings, Spring semester 2016. [http://museum.cornell.edu/watermark-identification-rembrandt-etchings]</p>
+          <p>Video: Papermaking by hand at Hayle Mill, England in 1976. [http://www.youtube.com/watch?v=Xs3PfwOItto]</p>
+          <p>Chancery Papermaking. [http://now.uiowa.edu/2013/05/center-book-releases-short-film-about-papermaking]</p>
+          <p>Video: Rembrandt & Printmaking: Etching and Drypoint (Philadelphia Museum of Art). [https://www.youtube.com/watch?v=RM0qlQ0lyBc]</p>
+          <p>Video: The Etching Process (Sequence from film Goya’s Ghosts). [https://www.youtube.com/watch?v=nlpsBU6gkUM]</p>
+          <p>LIMA (Literary Manuscripts) at University of Warwick, UK’s Centre for the Study of the Renaissance. [http://www2.warwick.ac.uk/fac/arts/ren/projects/lima/paper/describing/]</p>
+          <p>International Association of Paper Historians Standard. [http://www.paperhistory.org/standard.htm]</p>
+          <p>Bernstein: The Memory of Paper. [http://www.memoryofpaper.eu/BernsteinPortal/appl_start.disp]</p>
+          <p>The NIKI International Database of Watermarks and Paper used for Prints and Drawings (c. 1450-1800). [http://www.wm-portal.net/niki/index.php]</p>
+          <p>WILC: Watermarks in Incunabula Printed in the Low Countries. [http://watermark.kb.nl/page]</p>
+          <p>The Piccard Watermarks collection at the Staatshauptsarchiv, Stuttgart. [http://www.piccard-online.de/]</p>
+          <p>Briquet online. [http://www.ksbm.oeaw.ac.at/_scripts/php/BR.php]</p>
+          <p>The Thomas L. Gravell watermark archive. [http://www.gravell.org]
+        </div>
       </div>
       <div class="footer">
         Herbert F. Johnson Museum of Art, Cornell University
