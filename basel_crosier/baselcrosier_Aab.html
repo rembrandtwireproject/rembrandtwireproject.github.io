@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/index.ico">
+    <title>Watermark Project</title>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <a href="../"><img id="logo" src="../assets/wire_logo.png" alt="Cornell WIRE logo"></a>
+        <img id="rembrandt" src="../assets/rembrandt_header.png" alt="Rembrandt header">
+      </div>
+      <div class="menu">
+        <a href="../">Home</a>
+        <a href="../about">About</a>
+        <a href="../team">Project Team</a>
+        <a href="../resources">Resources</a>
+      </div>
+      <div class="main">
+        <div class="split">
+          <div class="left">
+            <h3>Single-Headed Eagle</h3>
+            <a class="button" href="diagram.html">See branch diagram</a>
+            <br>
+            <a class="button" href="basel_q2.html">↩ Back one step</a>
+            <h3>Your watermark is Basel Crosier, A.a.b.</h3>
+            <p>Watermark A.a.b. can be distinguished by several features: the top of the basel crosier is on a crowned shield, the central band of the crown contains three groups of triple circles and the initials EHM can be found below the shield. This watermark is a twinmark with Basel Crosier, A.a.a.</p>
+            <p>________________________________________________________________________</p>
+            <p>This watermark can be found on the following prints:</p>
+            <ul>
+              <li><i>Self-portrait in a cap and scarf with the face dark: bus</i>, 1633, (B. 17 ii/ NHD 120 ii), Private Collection, USA (PCU B.17ii). Folio sheet.</li>
+              <li><i>The angel appearing to the shepherds</i>, 1634, (B. 44 iii/ NHD 125 iii), Art Institute, Chicago (AIC 1938.1737). Uncut broadsheet.</li>
+              <li><i>The angel appearing to the shepherds</i>, 1634, (B. 44 iii/ NHD 125 iii), Private Collection, Switzerland (PCS B.44iii). Uncut broadsheet.</li>
+              <li><i>The angel appearing to the shepherds</i>, 1634, (B. 44 iii/ NHD 125 iii), Metropolitan Museum of Art, New York (MMA 20.46.14). Uncut broadsheet.</li>
+              <li><i>The angel appearing to the shepherds</i>, 1634, (B. 44 iii/ NHD 125 iii), British Museum, London (BM 1973-U.852). Uncut broadsheet.</li>
+              <li><i>The flight into Egypt: small plate</i>, 1633, (B. 52 i/ NHD 117 i), Rijksprentenkabinet, Amsterdam (RPK OB.304). Quarto sheet.</li>
+              <li><i>The tribute money</i>, circa 1635, (B. 68 i/ NHD 138 i), Rijksprentenkabinet, Amsterdam (RPK OB.132). Quarto sheet.</li>
+              <li><i>Man making water</i>, 1631, (B. 190 only state/ NHD 52 ii), Rijksprentenkabinet, Amsterdam (RPK 61:1100). Quarto sheet.</li>
+              <li><i>Bald-headed man in profile to the right [Rembrandt’s father?]</i>, 1630, (B. 292 iii/ NHD 62 v), British Museum, London (BM 1843-6-7-174). Quarto sheet.</li>
+              <li><i>Bust of an old man with a flowing beard, the head bowed forward</i>, 1630, (B. 325 only state/ NHD 64 only state), Frits Lugt Collection, Institut Néerlandais, Paris (FLC 6898). Quarto sheet.</li>
+              <li><i>Woman reading</i>, 1634, (B. 345 i/ NHD 137 i), Rijksprentenkabinet, Amsterdam (RPK 61:1190). Folio sheet.</li>
+             
+
+              
+            </ul>
+            <p>(Erik Hinterding, <i>Rembrandt as an Etcher</i>, 2006, II, 61)</p>
+            
+          </div>
+          <div class="right">
+            <h3>Your comparative image</h3>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Herbert F. Johnson Museum of Art, Cornell University
+      </div>
+    </div>
+    <script>
+      sessionStorage.last = "basel_Ca";
+      const image = sessionStorage.image;
+      const elem = document.createElement("img");
+      elem.setAttribute("src", image);
+      const right = document.getElementsByClassName("right")[0];
+      right.appendChild(elem);
+    </script>
+  </body>
+</html>

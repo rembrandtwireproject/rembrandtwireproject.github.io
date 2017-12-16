@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/index.ico">
+    <title>Watermark Project</title>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <a href="../"><img id="logo" src="../assets/wire_logo.png" alt="Cornell WIRE logo"></a>
+        <img id="rembrandt" src="../assets/rembrandt_header.png" alt="Rembrandt header">
+      </div>
+      <div class="menu">
+        <a href="../">Home</a>
+        <a href="../about">About</a>
+        <a href="../team">Project Team</a>
+        <a href="../resources">Resources</a>
+      </div>
+      <div class="main">
+        <div class="split">
+          <div class="left">
+            <h3>Single-Headed Eagle</h3>
+            <a class="button" href="diagram.html">See branch diagram</a>
+            <br>
+            <a class="button" href="basel_q8.html">↩ Back one step</a>
+            <h3>Your watermark is Basel Crosier, C.a.a.</h3>
+            <p>Watermark C.a.a. can be distinguished by several features: there is a fleur-de-lis in the arch below the crown, the crown is double banded and the top band contains jewels, and the initials VA or AV can be found below the shield.</p>
+            <p>________________________________________________________________________</p>
+            <p>This watermark can be found on the following prints:</p>
+            <ul>
+              <li><i>The good Samaritan</i>, 1633, (B.90 ii/ NHD 116 ii), Rijksprentenkabinet, Amsterdam (RPK OB.162). Uncut broadsheet.</li>
+              <li><i>The good Samaritan</i>, 1633, (B.90 ii/ NHD 116 ii), Edmond de Rothschild Collection, Paris (EdRC 2390 L.R.). Uncut broadsheet.</li>
+              <li><i>The good Samaritan</i>, 1633, (B.90 iii/ NHD 116 iii), Hermitage Museum, St Petersburg (HMP 235076). Uncut broadsheet. </li>
+            </ul>
+            <p>(Erik Hinterding, <i>Rembrandt as an Etcher</i>, 2006, II, 63)</p>
+            
+          </div>
+          <div class="right">
+            <h3>Your comparative image</h3>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Herbert F. Johnson Museum of Art, Cornell University
+      </div>
+    </div>
+    <script>
+      sessionStorage.last = "basel_Ca";
+      const image = sessionStorage.image;
+      const elem = document.createElement("img");
+      elem.setAttribute("src", image);
+      const right = document.getElementsByClassName("right")[0];
+      right.appendChild(elem);
+    </script>
+  </body>
+</html>
