@@ -23,20 +23,20 @@
       <div class="main">
         <div class="split">
           <div class="left">
+            <h3>User's image to be matched</h3>
+          </div>
+          <div class="right">
             <h3>Single-Headed Eagle</h3>
             <a class="button" href="diagram.html">See branch diagram</a>
             <br>
             <a class="button" href="only_letters_eagle.html">↩ Back one step</a>
             <a class="button" href="index.html">↻ Restart this branch</a>
             <h3>Does the eagle's beak-side foot cross a chain line?</h3>
-            <a class="button" href="basel_Bab.html">Yes</a>
-            <a class="button" href="basel_Baa.html">No</a>
+            <a class="button" href="basel_Baa.html">Yes</a>
+            <a class="button" href="basel_Bab.html">No</a>
             <h3>Example</h3>
-            <p>Does the eagle's beak-side foot cross a chain line? (Marked with red).</p>
+            <p>Does the eagle's beak-side foot cross a chain line?</p>
             <img src="images/wings_chain_line.png" alt="wings_chain_line">
-          </div>
-          <div class="right">
-            <h3>Your comparative image</h3>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);
-      const right = document.getElementsByClassName("right")[0];
+      const right = document.getElementsByClassName("left")[0];
       right.appendChild(elem);
     </script>
   </body>

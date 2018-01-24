@@ -23,6 +23,9 @@
       <div class="main">
         <div class="split">
           <div class="left">
+            <h3>User's image to be matched</h3>
+          </div>
+          <div class="right">
             <h3>Single-Headed Eagle</h3>
             <a class="button" href="diagram.html">See branch diagram</a>
             <br>
@@ -32,11 +35,8 @@
             <a class="button" href="B'aa.html">Yes</a>
             <a class="button" href="B'b.html">No</a>
             <h3>Example</h3>
-            <p>Is the second segment of the wing noticeably shorter than the first segment? (Marked with red.)</p>
+            <p>Is the second segment of the wing noticeably shorter than the first segment? (Marked with blue.)</p>
             <img src="images/wing_shorter.png" alt="wing_shorter">
-          </div>
-          <div class="right">
-            <h3>Your comparative image</h3>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);
-      const right = document.getElementsByClassName("right")[0];
+      const right = document.getElementsByClassName("left")[0];
       right.appendChild(elem);
     </script>
   </body>

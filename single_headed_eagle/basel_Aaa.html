@@ -23,24 +23,17 @@
       <div class="main">
         <div class="split">
           <div class="left">
+            <h3>User's image to be matched</h3>
+          </div>
+          <div class="right">
             <h3>Single-Headed Eagle</h3>
             <a class="button" href="diagram.html">See branch diagram</a>
             <br>
             <a class="button" href="wings_downward.html">↩ Back one step</a>
             <a class="button" href="index.html">↻ Restart this branch</a>
             <h3>Your watermark is Eagle with Basel Crosier, Single-Headed, A.a.a.</h3>
-            <p>Watermark A.a.a. is distinguishable by these three features: wings that point downward, a smooth neck without ruffles, and four claws extending from the foot (marked with red).</p>
-             <p>________________________________________________________________________</p>
-            <p>This watermark can be found on the following prints:</p>
-            <ul>
-              <li><i>The third oriental head</i>, 1635, Rijksprentenkabinet, Amsterdam.</li>
-              <li><i>The great Jewish bride</i>, 1635, National Gallery of Art, Washington. </li>
-            </ul>
-            <p>(Erik Hinterding, <i>Rembrandt as an Etcher</i>, 2006, II, 106)</p>
+            <p>Watermark A.a.a. is distinguishable by these three features: wings that point downward, a smooth neck without ruffles, and four claws extending from the foot.</p>
             <img src="images/basel_Aaa.png" alt="basel_Aaa">
-          </div>
-          <div class="right">
-            <h3>Your comparative image</h3>
           </div>
         </div>
       </div>
@@ -53,7 +46,7 @@
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);
-      const right = document.getElementsByClassName("right")[0];
+      const right = document.getElementsByClassName("left")[0];
       right.appendChild(elem);
     </script>
   </body>

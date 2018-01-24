@@ -23,20 +23,20 @@
       <div class="main">
         <div class="split">
           <div class="left">
+            <h3>User's image to be matched</h3>
+          </div>
+          <div class="right">
             <h3>Single-Headed Eagle</h3>
             <a class="button" href="diagram.html">See branch diagram</a>
             <br>
             <a class="button" href="index.html">↩ Back one step</a>
             <a class="button" href="index.html">↻ Restart this branch</a>
-            <h3>Is there a crosier of the Basel type, with three lobes at the bottom, on the eagle’s breast? </h3>
+            <h3>Is there a crosier of the Basel type, with three lobes at the bottom, on the eagle's breast?</h3>
             <a class="button" href="wings_downward.html">Yes</a>
             <a class="button" href="fleur_eagle.html">No</a>
             <h3>Example</h3>
-            <p>Is there a crosier of the Basel type, with three lobes at the bottom, on the eagle’s breast? (circled in red)</p>
+            <p>Is there a crosier of the Basel type, with three lobes at the bottom, on the eagle's breast? (circled in grey)</p>
             <img src="images/basel_eagle.png" alt="basel_eagle">
-          </div>
-          <div class="right">
-            <h3>Your comparative image</h3>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);
-      const right = document.getElementsByClassName("right")[0];
+      const right = document.getElementsByClassName("left")[0];
       right.appendChild(elem);
     </script>
   </body>

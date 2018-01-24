@@ -23,29 +23,18 @@
       <div class="main">
         <div class="split">
           <div class="left">
+            <h3>User's image to be matched</h3>
+          </div>
+          <div class="right">
             <h3>Single-Headed Eagle</h3>
             <a class="button" href="diagram.html">See branch diagram</a>
             <br>
             <a class="button" href="wings_chain_line.html">↩ Back one step</a>
             <a class="button" href="index.html">↻ Restart this branch</a>
             <h3>Your watermark is Eagle with Basel Crosier, Single-Headed, B.a.a.</h3>
-            <p>Watermark B.a.a. can be distinguished by three features: its eagle contains a Basel crosier, its foot on the beak side stays in, but does not cross, a chain line, and below it are the letters ID (marked with red).</p>
-            <p>________________________________________________________________________</p>
-            <p>This  watermark can be found on the following prints(all small format):</p>
-            <ul>
-              <li><i>Self-portrait (?) with plumed cap and lowered saber</i>,1634, Rijksprentenkabinet, Amsterdam.</li>
-              <li><i>Self-portrait (?) with plumed cap and lowered saber</i>,1634, Kunstsammlungen der Veste Coburg.</li>
-              <li><i>Abraham casting out Hagar and Ishmael</i>, 1637, Hermitage Museum, St. Petersburg. </li>
-              <li><i>Man crying out 'Tis bitterly cold'</i>, 1634, Frits Lugt Collection, Institut Néerlandais, Paris.</li>
-              <li><i>Man replying 'Not at all'</i>, circa 1634, Frits Lugt Collection, Institut Néerlandais, Paris.</li>
-              <li><i>Woman reading</i>,1634, Philadelphia Museum of Art.</li>
-            </ul>
-            <p>(Erik Hinterding, <i>Rembrandt as an Etcher</i>, 2006, II, 106)</p>
-
+            <p>Watermark B.a.a. can be distinguished by  three features: its eagle contains a Basel crosier, its foot on the beak side stays in, but does not cross, a chain line, and below it are the letters ID. 
+</p>
             <img src="images/basel_Baa.png" alt="basel_Baa">
-          </div>
-          <div class="right">
-            <h3>Your comparative image</h3>
           </div>
         </div>
       </div>
@@ -58,7 +47,7 @@
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);
-      const right = document.getElementsByClassName("right")[0];
+      const right = document.getElementsByClassName("left")[0];
       right.appendChild(elem);
     </script>
   </body>

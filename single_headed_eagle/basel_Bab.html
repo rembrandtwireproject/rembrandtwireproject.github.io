@@ -23,26 +23,17 @@
       <div class="main">
         <div class="split">
           <div class="left">
+            <h3>User's image to be matched</h3>
+          </div>
+          <div class="right">
             <h3>Single-Headed Eagle</h3>
             <a class="button" href="diagram.html">See branch diagram</a>
             <br>
             <a class="button" href="wings_chain_line.html">↩ Back one step</a>
             <a class="button" href="index.html">↻ Restart this branch</a>
             <h3>Your watermark is Eagle with Basel Crosier, Single-Headed, B.a.b.</h3>
-            <p>Watermark B.a.b. Can be distinguished by three features: the eagles’ beak-side foot crosses a chain line, the ends of its feet are rounded, not pointed, and three claws extend from its foot (marked with red).</p>
-            <p>________________________________________________________________________</p>
-            <p>This same watermark can be found on the following prints, both small in format:</p>
-             <ul>
-              <li><i>Abraham casting out Hagar and Ishmael</i>, 1637, Metropolitan Museum of Art, New York. </li>
-              <li><i>Abraham casting out Hagar and Ishmael</i>, 1637, Library of Congress, Washington, D.C.</li>
-              <li><i>Abraham casting out Hagar and Ishmael</i>, 1637, Bibliothèque Nationale de France, Paris.  </li>
-              <li><i>The artist's mother seated at a table</i>, circa 1634, former Ritman Collection, London.</li> 
-            </ul>
-            <p>(Erik Hinterding, <i>Rembrandt as an Etcher</i>, 2006, II, 106)</p>
+            <p>Watermark B.a.b. Can be distinguished by three features: the eagles' beak-side foot crosses a chain line (marked with red), the ends of its feet are rounded, not pointed, and three claws extend from its foot.</p>
             <img src="images/basel_Bab.png" alt="basel_Bab">
-          </div>
-          <div class="right">
-            <h3>Your comparative image</h3>
           </div>
         </div>
       </div>
@@ -55,7 +46,7 @@
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);
-      const right = document.getElementsByClassName("right")[0];
+      const right = document.getElementsByClassName("left")[0];
       right.appendChild(elem);
     </script>
   </body>

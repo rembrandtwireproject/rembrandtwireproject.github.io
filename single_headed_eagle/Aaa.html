@@ -23,24 +23,17 @@
       <div class="main">
         <div class="split">
           <div class="left">
+            <h3>User's image to be matched</h3>
+          </div>
+          <div class="right">
             <h3>Single-Headed Eagle</h3>
             <a class="button" href="diagram.html">See branch diagram</a>
             <br>
             <a class="button" href="beak_crown.html">↩ Back one step</a>
             <a class="button" href="index.html">↻ Restart this branch</a>
-            <h3>Your watermark is  Eagle, Single-Headed, A.a.a. (or twinmark A.a.b.)</h3>
-            <p>Watermark A.a.a. can be distinguished by three features: its eagle's wings point downward, it has a smooth neck without ruffles, and it has four claws that extend from its foot.</p>
-            <p>________________________________________________________________________</p>
-            <p>This watermark can be found on the print <i>Studies of the heads of Saskia and others</i>, 1636, at the Metropolitan Museum of Art, New York.</p>
-            <p><b>NOTE:</b> The WIRE project believes that the twinmark to this watermark, Eagle, Single-Headed A.a.b., is found on an impression of <i>Studies of the heads of Saskia and others</i>, 1636, held in a private collection, which we have provided as a comparative image for this exercise.</p>
-            <p>A <i>twinmark</i> is one of two nearly identical watermarks affixed to a pair of paper molds used in rotation to make a batch of paper. The watermark in the image we have supplied is notably different from A.a.a. since there is an angular bend in the beak-side wing feather that causes the feathers to appear distorted. Another impression of the same print, <i>Studies of the heads of Saskia and others</i>, held at the Metropolitan Museum of Art, contains  an A.a.a. watermark. This provides further evidence that watermark A.a.b. (lower right) is a twinmark of A.a.a (lower left).</p>
-
-
-
-            <img src="images/Aaa.png" alt="Aaa"> <img src="images/option_Aab.png" alt="Aab">
-          </div>
-          <div class="right">
-            <h3>Your comparative image</h3>
+            <h3>Your watermark is Eagle, Single-Headed, A.a.a. (or twinmark A.a.b.) </h3>
+            <p>Watermark A.a.a. can be identified by a crowned, single headed eagle that has a crosier on its breast. The eagle's wing feathers are double-layered and point downwards.</p>
+            <img src="images/Aaa.png" alt="Aaa">
           </div>
         </div>
       </div>
@@ -53,7 +46,7 @@
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);
-      const right = document.getElementsByClassName("right")[0];
+      const right = document.getElementsByClassName("left")[0];
       right.appendChild(elem);
     </script>
   </body>
