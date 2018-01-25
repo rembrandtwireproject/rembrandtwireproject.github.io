@@ -106,6 +106,7 @@ html {
   display: grid;
   grid-template-areas:
     'left right';
+  grid-column-gap: 50px;
 }
 
 .left {
