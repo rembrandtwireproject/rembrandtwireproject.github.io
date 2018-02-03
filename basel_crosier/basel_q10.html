@@ -23,19 +23,20 @@
       <div class="main">
         <div class="split">
           <div class="left">
-            <h3>Basel Crosier</h3>
-            <a class="button" href="diagramb.html">See branch diagram</a>
-            <br>
-            <a class="button" href="basel_q7.html">↩ Back one step</a>
-            <h3>Does the shield touch both the immediate outer chain lines?  </h3>
-            <a class="button" href="baselcrosier_B'ab.html">Yes</a>
-            <a class="button" href="baselcrosier_B'aa.html">No</a>
-            <h3>Example</h3>
-            <p>Does the shield touch both the immediate outer chain lines?  </p>
-            <img src="images/BaselCrosier_Step5.png" alt="step 1">
+            <h3>User's image to be matched</h3>
           </div>
           <div class="right">
-            <h3>Your comparative image</h3>
+            <h3>Basel Crosier</h3>
+            <a class="button" href="diagram.html">See branch diagram</a>
+            <br>
+            <a class="button" href="basel_q7.html">↩ Back one step</a>
+            <a class="button" href="index.html">↻ Restart this branch</a>
+            <h3>Does the shield touch both the immediate outer chain lines?</h3>
+            <a class="button" href="B'ab.html">Yes</a>
+            <a class="button" href="B'aa.html">No</a>
+            <h3>Example</h3>
+            <p>Does the shield touch both the immediate outer chain lines?</p>
+            <img src="images/basel_q10.png" alt="basel_q10">
           </div>
         </div>
       </div>
@@ -44,11 +45,11 @@
       </div>
     </div>
     <script>
-      sessionStorage.last = "beak_crown";
+      sessionStorage.last = "basel_q10";
       const image = sessionStorage.image;
       const elem = document.createElement("img");
       elem.setAttribute("src", image);
-      const right = document.getElementsByClassName("right")[0];
+      const right = document.getElementsByClassName("left")[0];
       right.appendChild(elem);
     </script>
   </body>
