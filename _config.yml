@@ -23,9 +23,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 github_username:  craig-riecke
 github: [metadata]
 
-plugins:
-  - jekyll-redirect-from
-
 # Build settings
 markdown: kramdown
 theme: minima
