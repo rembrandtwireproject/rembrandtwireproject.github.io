@@ -18,10 +18,13 @@ email: cr396@cornell.edu
 description: > # this means to ignore newlines until "baseurl:"
   The Watermark Identification in Rembrandt’s Etchings (WIRE) project aims to simplify
   the process of confidently identifying watermarks in Rembrandt’s etchings.
-baseurl: "/rembrandtwireproject.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 #url: "https://craig-riecke.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  craig-riecke
 github: [metadata]
+
+plugins:
+  - jekyll-redirect-from
 
 # Build settings
 markdown: kramdown
