@@ -1,0 +1,351 @@
+body {
+  font-family: 'Avenir', serif;
+  margin: 0 auto;
+  padding: .5em 1em;
+}
+
+.container-fluid {
+  background-color: black;
+  padding: 3em;
+}
+
+#logo {
+  height: 68px;
+}
+
+ul.wirenav {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+ul.wirenav li {
+  margin-left: 8%;
+  margin-right: 8%;
+  display: inline-block;
+}
+
+ul.wirenav li a {
+  color: white;
+  text-align: center;
+}
+
+ul.wirenav a.selected {
+  font-style: italic;
+}
+
+ul.wirenav a:hover {
+  color: #FFB30D;
+}
+
+.text {
+  opacity: 1.0;
+  margin:100px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36pt;
+  font-family: "Crimson Text";
+}
+
+.container-index {
+  background-image: url("../assets/black.png");
+  background-size: cover;
+  display:block;
+  background-size:100%;
+  background-repeat:no-repeat;
+  height: 150hv;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  padding: 2%;
+  margin-top: -2%;
+}
+
+.text_index {
+  opacity: 1;
+  color: white;
+  text-align:center;
+  margin: 5%;
+  font-style: normal;
+}
+
+.container-fluid.footer {
+  padding: 2%;
+  font-color: white;
+  font-family:'Crimson Text', serif;
+  text-align: center;
+  bottom: 0;
+}
+
+.btn.btn-primary {
+  clear: both;
+  border: none;
+  background-color: #FFB30D;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-style: normal;
+  padding: 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.btn.btn-small {
+  clear: both;
+  border: 3px solid #FFB30D;
+  background-color: white;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-style: normal;
+  padding: 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  padding: .8em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 12em;
+  text-transform: uppercase;
+  font-size: 16pt;
+  letter-spacing: 5pt;
+  font-weight: bolder;
+  border: 3px solid white;
+  border-radius: 25px;
+}
+
+.button:hover {
+  border: 3px solid #FFB30D;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.round-button {
+  display:flex;
+  width:180px;
+  height:180px;
+  border: 3px solid white;
+  border-radius: 50%;
+  color: black;
+  text-align:center;
+  align-items: center;
+  background: #FFB30D;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.round-button:hover {
+  border: 3px solid #FFB30D;
+  color: black;
+  text-decoration: none;
+}
+
+.chooseYourWatermarkButton {
+  border: 3px solid white;
+  border-radius: 25px;
+}
+
+.chooseYourWatermarkButton:hover {
+  border: 3px solid #FFB30D;
+  color: #FFB30D;
+  border-radius: 25px;
+}
+
+.chooseYourWatermarkButton figure {
+  display: block;
+  float: left;
+  margin-left: 0.5em;
+  margin-top: 0;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+}
+
+.chooseYourWatermarkButton figcaption {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.chooseYourWatermarkButton img {
+  width: 120px;
+  height: 180px;
+  border-radius: 25px;
+}
+
+
+.watermarkButton figure {
+  display: block;
+  float: left;
+  margin-left: 0.5em;
+  margin-top: 0;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+}
+
+.watermarkButton figcaption {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.watermarkButton img.active {
+  height: 400px;
+  width: 240px;
+  border-radius: 25px;
+  transition: transform .2s; /* Animation */
+}
+
+.watermarkButton img.active:hover {
+  transform: scale(2.0);
+  cursor: pointer;
+}
+
+.watermarkButton img.inactive {
+  height: 400px;
+  width: 240px;
+  border-radius: 25px;
+  opacity: 0.5;
+}
+
+.watermarkButton img.inactive:hover {
+  transform: none;
+}
+
+.end-result {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 30px solid #FFB30D;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  align-items: center;
+  background: white;
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: "Crimson Text"
+}
+
+.end-result-prefix {
+  font-size: 14pt;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.end-result-image {
+  width: 400px;
+  border-radius: 25px;
+}
+
+.end-result-explanation {
+  font-size: 16pt;
+}
+
+.end-result-examples-prefix {
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: "Crimson Text";
+  text-align: center;
+}
+
+#sample {
+  position: absolute;
+  width: 500px;
+  z-index: 999;
+  border: 10px solid white;
+  color: white;
+}
+
+#sample:hover {
+  background: url( "../assets/moveable.png");
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  background-position: center;
+  border: 10px solid #FFB30D;
+  border-radius: 10%;
+  color: black;
+}
+
+#sample-title-and-img {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#sample img {
+  width: 400px;
+  height: 667px;
+}
+
+#sample-title {
+  text-transform: uppercase;
+  font-size: 16pt;
+  letter-spacing: 5pt;
+  font-weight: bolder;
+}
+
+.img-container {
+  /* width: 1024px; */
+  height: 768px;
+}
+
+.img-container img {
+  max-width: 100%
+}
+
+.docs-tooltip {
+  font-size: 28pt;
+}
+
+glossary {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.example-board {
+  display: flex;
+  justify-content: space-around;
+}
+
+#openseadragon-your-image {
+  border: 5px solid black;
+}
+
+#openseadragon-reference-image {
+  border: 5px solid black;
+}
+
+.question-grid-container {
+  display: grid;
+  grid-template-columns: auto 425px auto;
+  justify-content: center;
+}
+.your-image-panel {
+  grid-column-start: 1;
+}
+.reference-image-panel {
+  grid-column-start: 2;
+}
+.question-panel {
+  grid-column-start: 3;
+}
+
+.watermark-grid-container {
+  display: grid;
+  grid-template-columns: auto 425px auto;
+  justify-content: center;
+}
+.answer-panel {
+  grid-column-start: 3;
+}
