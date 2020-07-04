@@ -1,7 +1,302 @@
+4hs:
+  name: 4HS
+  image: archetype
+  start: Aa
+  diagram: disabled
+
+anchor:
+  name: Anchor
+  image: archetype
+  start: Aa
+  diagram: disabled
+
+arms_of_amsterdam:
+  name: Arms of Amsterdam
+  image: archetype
+  start: feathers_q1
+
+arms_of_baden_hochberg:
+  name: Arms of Baden-Hochberg
+  image: archetype
+  start: top_quad_dip
+
+arms_of_bern:
+  name: Arms of Bern
+  image: archetype
+  start: edgescrolls
+
+arms_of_bristol:
+   name: Arms of Bristol
+   image: archetype
+   start: Bisected_Of
+
+arms_of_burgundy_and_austria:
+  name: Arms of</br>Burgundy and Austria
+  image: archetype
+  start: sheep_chainline
+
+arms_of_colbert:
+  name: Arms of Colbert
+  image: archetype
+  start: crown_past_chainline
+
+arms_of_england:
+  name: Arms of England
+  image: archetype
+  start: A2a
+  diagram: disabled
+
+arms_of_france:
+  name: Arms of France
+  image: archetype
+  start: Aa
+
+arms_of_kyburg:
+  name: Arms of Kyburg
+  image: archetype
+  start: A2a
+  diagram: disabled
+
+arms_of_london:
+  name: Arms of London
+  image: archetype
+  start: Aa
+  diagram: disabled
+
+arms_of_ravensburg:
+  name: Arms of <br/>Ravensburg
+  image: archetype
+  start: shield_BM
+
+arms_of_wurttemberg:
+  name: Arms of<br/>Württemberg
+  image: archetype
+  start: letters_below_crest_q1
+
 basel_crosier:
   name: Basel Crosier
-  image: option_Aaa
+  image: archetype
+  start: basel_q1
 
-single_headed_eagle:
-  name: Single-Headed Eagle
-  image: single_headed_eagle
+basilisk:
+  name: Basilisk
+  image: archetype
+  start: chainline_vertical
+
+countermark_a:
+  name: Countermark 'A'
+  image: archetype
+  start: three_letters
+
+countermark_d:
+  name: Countermark 'D'
+  image: archetype
+  start: g_next_d
+
+countermark_f:
+  name: Countermark 'F'
+  image: archetype
+  start: c_follows_q1
+
+countermark_g:
+  name: Countermark 'G'
+  image: archetype
+  start: chain_line
+
+countermark_h:
+  name: Countermark 'H'
+  image: archetype
+  start: p_extend_above
+
+countermark_i:
+  name: Countermark 'I'
+  image: archetype
+  start: letters_BDR
+
+countermark_j:
+  name: Countermark 'J'
+  image: archetype
+  start: JBa
+  diagram: disabled
+
+countermark_l:
+  name: Countermark 'L'
+  image: archetype
+  start: followedby_b
+
+countermark_m:
+  name: Countermark 'M'
+  image: archetype
+  start: four_leaf
+
+countermark_n:
+  name: Countermark 'N'
+  image: archetype
+  start: countermark_n_question_1
+
+countermark_o:
+  name: Countermark 'O'
+  image: archetype
+  start: OMa
+  diagram: disabled
+
+countermark_p:
+  name: Countermark 'P'
+  image: archetype
+  start: chain_line_mid
+
+countermark_r:
+  name: Countermark 'R'
+  image: archetype
+  start: letter_next_R
+
+
+countermark_v:
+  name: Countermark 'V'
+  image: archetype
+  start: double_wired
+
+countermark_w:
+  name: Countermark 'W'
+  image: archetype
+  start: chainline_bisect_w
+
+countermark_y:
+  name: Countermark 'Y'
+  image: archetype
+  start: fragment
+
+Small_Crosses:
+  name: Cross
+  image: archetype
+  start: CrossesSmallCircle
+
+Lorraine_Cross:
+  name: Cross of Lorraine
+  image: archetype
+  start: LorrainQuestion1
+
+dovecote:
+  name: Dovecote
+  image: archetype
+  start: Aa
+  diagram: disabled
+
+eagle:
+  name: Eagle
+  image: archetype
+  start: two_heads
+
+fleur_de_lis:
+  name: Fleur-de-lis
+  image: archetype
+  start: divided_line
+
+foolscap_5_pointed_collar:
+  name: Foolscap with<br/>Five-Pointed Collar
+  image: archetype
+  start: four_points
+
+foolscap_7_pointed_collar:
+  name: Foolscap with<br/>Seven-Pointed Collar
+  image: archetype
+  start: balls_equal
+
+grapes:
+  name: Grapes
+  image: archetype
+  start: bunch_contained_circle
+
+hare:
+  name: Hare
+  image: archetype
+  start: word_dehaes
+
+horse_and_rider:
+  name: Horse and Rider
+  image: archetype
+  start: extend_past_belly
+
+IHP:
+  name: IHP
+  image: archetype
+  start: IHPperpques
+
+IHS:
+  name: IHS
+  image: archetype
+  start: any_following_true
+
+kings_head:
+  name: King’s Head
+  image: archetype
+  start: Aa
+  diagram: disabled
+
+lion:
+  name: Lion
+  image: archetype
+  start: wings
+
+man:
+  name: Man
+  image: archetype
+  start: ManQuestion
+
+paschal_lamb:
+  name: Paschal Lamb
+  image: archetype
+  start: cartouche_q1
+
+phoenix:
+  name: Phoenix
+  image: archetype
+  start: wings_downward
+
+posthorn:
+  name: Posthorn
+  image: archetype
+  start: centerline
+
+pot:
+  name: Pot
+  image: archetype
+  start: Aa
+  diagram: disabled
+
+pro_patria:
+  name: Pro Patria
+  image: archetype
+  start: chainline_staff_hat
+
+serpent:
+  name: Serpent
+  image: archetype
+  start: SerpentWindows
+
+seven_provinces:
+  name: Seven Provinces
+  image: archetype
+  start: pointed_tip_q1
+
+star:
+  name: Star
+  image: archetype
+  start: starAb
+  diagram: disabled
+
+strasbourg_bend:
+  name: Strasbourg Bend
+  image: archetype
+  start: initials_q1
+
+strasbourg_lily:
+  name: Strasbourg Lily
+  image: archetype
+  start: crownbands
+
+wheel:
+  name: Wheel
+  image: archetype
+  start: Aa
+  diagram: disabled

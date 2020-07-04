@@ -1,3 +1,9 @@
 .DS_Store
 desktop.ini
 _site
+Gemfile.lock
+*.icloud
+vendor
+.bundle
+.vscode
+

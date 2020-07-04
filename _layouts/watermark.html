@@ -2,26 +2,201 @@
 layout: branch
 ---
 
-{% assign slug = page.path | split: "/" | last | split: "." | first %}
+{% assign slug = page.path | split: "/" | last | split: "." | pop | join: "." %}
+{% assign url_elts = page.path | split: "/" %}
+{% assign branch_pos = url_elts | size | minus: 2 %}
+{% assign branch_slug = url_elts[branch_pos] %}
+{% assign diagram = site.data.branches[branch_slug].diagram %}
 
-<h3>Your watermark is {{ page.name }}</h3>
-<p>{{ page.clarification }}</p>
-<p>________________________________________________________________________</p>
-{% if page.datable %}
-  <p><strong>This paper is datable to {{ page.datable }}</strong>.</p>
-{% endif %}
-<p>This watermark can be found on the following print(s):</p>
-<ul>
-  {% for prnt in page.prints %}
-  <li>
-    <i>{{ prnt.title }}</i>, {{ prnt.details }}.
-    {% if prnt.notes %}
-      <p><strong>NOTE:</strong> {{ prnt.notes }}</p>
+<div class="watermark-grid-container">
+  <div class="your-image-panel" style="display: none">
+    <div id="sample-title-and-img">
+      <span id="sample-title" >Your Image</span>
+      <br/>
+      <div id="openseadragon-your-image" style="width: 400px; height: 600px;"></div>
+    </div>
+  </div>
+
+  <div class="reference-image-panel">
+    <div id="sample-title-and-img">
+      <span id="sample-title" >Reference Image</span>
+      <br/>
+      <div id="openseadragon-reference-image" style="width: 400px; height: 600px;"></div>
+    </div>
+  </div>
+
+  <div class="answer-panel">
+    <center>
+      <table style="margin-top: -20px">
+        <tr>
+          <td colspan="2">
+            <svg width="530" height="100" xmlns="http://www.w3.org/2000/svg">
+              <line
+                stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1"
+                y1="-10" x1="10" y2="110" x2="60"
+                stroke-width="20" stroke="#000" fill="none"
+              />
+            </svg>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="end-result">
+              <span class="end-result-prefix">Your watermark is</span>
+              {{ page.name }}
+            </div>
+          </td>
+
+          <td>
+            <svg width="230" height="300" xmlns="http://www.w3.org/2000/svg">
+              <line stroke-linecap="undefined" stroke-linejoin="undefined" stroke-dasharray="5,5" id="svg_2"
+                y2="35" x2="180.5" y1="82" x1="0.5"
+                stroke-opacity="null" stroke-width="5" stroke="#FFB30D" fill="none"/>
+              <ellipse ry="8" rx="8" id="svg_4" cy="22.5" cx="203"
+                stroke-opacity="null" stroke-width="5" stroke="#FFB30D" fill="none"/>
+            </svg>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+    <div class="col-md-12 end-result-explanation" >
+      {{ page.clarification }}
+      {% if page.datable %}
+        This paper is datable to {{ page.datable }}.
+      {% endif %}
+    </div>
+
+    <a class="btn btn-primary btn-upload" onclick="$('#not-your-watermark').show();">
+      Not Your Watermark?
+    </a>
+    <div id="not-your-watermark" style="display:none">
+      Thank you for using the WIRE watermark identification tool! It is possible that your watermark is a previously unidentified variant.
+      Please email a photo of it to Andy Weislogel at aw27@cornell.edu and we will confirm as best we are able.
+      <hr/>
+    </div>
+
+    {% if page.examples %}
+    <div class="end-result-examples-prefix" style="margin-bottom:10px;font-family:Avenir;text-transform:uppercase;font-size:16pt; letter-spacing:5pt;font-weight:bolder;">
+      Other examples of your watermark
+    </div>
+    <center>
+      <svg width="700" height="25" xmlns="http://www.w3.org/2000/svg">
+        <line stroke-linecap="undefined" stroke-linejoin="undefined" stroke-dasharray="5,5" id="svg_2" y2="12" x2="0"
+          y1="12" x1="700" stroke-opacity="null" stroke-width="5" stroke="#FFB30D" fill="none" />
+      </svg>
+    </center>
+
+    <div class="example-board">
+      <img src="../assets/arrow-pointing-to-right-in-a-circle-svgrepo-com.svg" height="62px" style="transform:rotate(180deg)"/>
+      {% for example in page.examples %}
+        <div class="example">
+          <a href="../example.html?id={{ example.id }}">
+            <img src="../watermark_db/images/watermarks/{{ example.id }}.png" width="300px"/>
+          </a>
+          <br/><br/>
+          <p id="caption-{{ example.id }}"></p>
+          <script>
+            fetch("../watermark_db/data/{{ example.id }}.json").then(function (response) {
+              return response.json();
+            })
+            .then(function (watermarkJson) {
+              let captionP = document.getElementById("caption-{{ example.id }}");
+              captionP.appendChild(document.createTextNode(watermarkJson.title));
+              captionP.appendChild(document.createElement("br"));
+              captionP.appendChild(document.createTextNode(watermarkJson.inventor));
+              captionP.appendChild(document.createElement("br"));
+              captionP.appendChild(document.createTextNode(watermarkJson.date_of_original_work));
+              captionP.appendChild(document.createElement("br"));
+              captionP.appendChild(document.createTextNode(watermarkJson.medium_technique));
+              captionP.appendChild(document.createElement("br"));
+              captionP.appendChild(document.createTextNode(watermarkJson.owner));
+              captionP.appendChild(document.createElement("br"));
+              captionP.appendChild(document.createTextNode(watermarkJson.inventory_number));
+            });
+          </script>
+        </div>
+      {% endfor %}
+      <img src="../assets/arrow-pointing-to-right-in-a-circle-svgrepo-com.svg" height="62px"/>
+    </div>
+    <!-- Change this to page.prints to enable end notes, false to disable-->
+    {% elsif page.prints %}
+      <div class="end-result-examples-prefix">
+        The watermark can be found on the following print(s):
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+
+          <div class="col-md-8">
+            <ul>
+              {% for prnt in page.prints %}
+              <li>
+                <i>{{ prnt.title }}</i>, {{ prnt.details }}.
+                {% if prnt.notes %}
+                  <p><strong>NOTE:</strong> {{ prnt.notes }}</p>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+            {% if page.hinterding %}
+              <p>(Erik Hinterding, <i>Rembrandt as an Etcher</i>, 2006, II, {{ page.hinterding }})</p>
+            {% endif %}
+          </div>
+
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    {% else %}
+    <p>In future, this correct watermark answer will be accompanied by examples of other prints found
+    on this same paper batch, citing previous scholarship and new WIRE project research.</p>
+
+    <p>In the meantime, researchers can access such information in
+      <a href="https://www.hollstein.com/rembrandt-as-an-etcher-the-practice-of-production-and-distribution-3-parts.html">
+        this print publication.
+      </a>
+    </p>
     {% endif %}
-  </li>
-  {% endfor %}
-</ul>
-{% if page.hinterding %}
-<p>(Erik Hinterding, <i>Rembrandt as an Etcher</i>, 2006, II, {{ page.hinterding }})</p>
-{% endif %}
-<img src="images/{{ slug }}.png" alt="{{ slug }}">
+
+    <center>
+      {% if diagram != "disabled" %}
+        <a class="button" href="diagram.html">Diagram</a>
+      {% endif %}
+      <a class="button" href="{{ site.data.branches[branch_slug].start }}.html">↻ Restart</a>
+    </center>
+
+  </div>
+</div>
+
+<script src="../assets/openseadragon-bin-2.4.0/openseadragon.min.js"></script>
+<script type="text/javascript">
+  const sampleImage = sessionStorage.getItem("sample");
+  const elem = document.querySelector(".your-image-panel");
+  if (sampleImage) {
+    OpenSeadragon({
+      id: "openseadragon-your-image",
+      prefixUrl: "../assets/openseadragon-bin-2.4.0/images/",
+      showRotationControl: true,
+      showFlipControl: true,
+      tileSources: {
+        type: "image",
+        url: sampleImage
+      }
+    });
+    elem.style.display = "";
+  } else {
+    elem.parentNode.removeChild(elem);
+  }
+  OpenSeadragon({
+    id: "openseadragon-reference-image",
+    prefixUrl: "../assets/openseadragon-bin-2.4.0/images/",
+    showRotationControl: true,
+    showFlipControl: true,
+    tileSources: {
+      type: "image",
+      url: "images/{{ slug }}.png"
+    }
+  });
+</script>
