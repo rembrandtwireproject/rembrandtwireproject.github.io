@@ -109,7 +109,7 @@ countermark_h:
   start: p_extend_above
 
 countermark_i:
-  name: Countermark 'I'
+  name: Countermark   ' I '
   image: archetype
   start: letters_BDR
 
@@ -160,11 +160,6 @@ countermark_w:
   name: Countermark 'W'
   image: archetype
   start: chainline_bisect_w
-
-countermark_y:
-  name: Countermark 'Y'
-  image: archetype
-  start: fragment
 
 Small_Crosses:
   name: Cross
