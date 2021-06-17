@@ -60,6 +60,13 @@
             <a href="{{ site.baseurl }}/resources.html">Resources</a>
           {% endif %}
         </li>
+        <li>
+          {% if page.path == "_pages/watermarkoverlays.html" %}
+            <img src="{{ site.baseurl }}/assets/linkImage.png" height="50px" />
+          {% else %}
+            <a href="{{ site.baseurl }}/watermarkoverlays.html">Watermark Overlays</a>
+          {% endif %}
+        </li>
       </ul>
     </nav>
     {{ content }}
